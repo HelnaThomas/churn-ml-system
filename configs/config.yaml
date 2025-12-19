@@ -1,0 +1,33 @@
+data:
+  raw_path: data/raw/telco_churn.csv
+  processed_path: data/processed/features.csv
+  target: Churn
+
+features:
+  numerical:
+    - tenure
+    - MonthlyCharges
+    - TotalCharges
+
+  categorical:
+    - gender
+    - SeniorCitizen
+    - Partner
+    - Dependents
+    - PhoneService
+    - MultipleLines
+    - InternetService
+    - OnlineSecurity
+    - OnlineBackup
+    - DeviceProtection
+    - TechSupport
+    - StreamingTV
+    - StreamingMovies
+    - Contract
+    - PaperlessBilling
+    - PaymentMethod
+
+training:
+  test_size: 0.2
+  random_state: 42
+  model_type: logistic_regression
