@@ -4,15 +4,13 @@ __pycache__/
 
 # Data (ignore real data, keep structure)
 data/raw/*
-data/processed/*
 !data/raw/.gitkeep
+
+data/processed/*
 !data/processed/.gitkeep
 
-# Models
 models/*
+!models/.gitkeep
 
-# Notebooks
-.ipynb_checkpoints/
-
-# Env
-.env
+__pycache__/
+*.pyc
